@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="66" viewBox="0 0 540 66">
+  <g id="logo" transform="translate(-61 -108)">
+    <text id="just_a_logo" data-name="just a logo" transform="translate(112 114)" fill="#505050" font-size="40" font-family="HelveticaNeue, Helvetica Neue"><tspan x="0" y="38">just a logo</tspan></text>
+    <path id="Subtraction_1" data-name="Subtraction 1" d="M18,36a18.133,18.133,0,0,1-3.628-.366,17.9,17.9,0,0,1-6.436-2.708,18.052,18.052,0,0,1-6.522-7.919A17.909,17.909,0,0,1,.366,21.628a18.175,18.175,0,0,1,0-7.255A17.9,17.9,0,0,1,3.074,7.936a18.053,18.053,0,0,1,7.92-6.522A17.909,17.909,0,0,1,14.372.366a18.171,18.171,0,0,1,7.4.03,17.91,17.91,0,0,1,3.5,1.132,18.011,18.011,0,0,0,0,32.944,17.91,17.91,0,0,1-3.5,1.132A18.12,18.12,0,0,1,18,36Z" transform="translate(61 108)" fill="#2f2f2f"/>
+  </g>
+</svg>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Color Site</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+        <nav id="overlay">
+            <div class="close-btn-container"><img src="assets/close.svg" class="close-btn" id="close-menu"></div>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                    <span>take me home</span>
+                </li>
+                <li>
+                    <a href="#">Featured</a>
+                    <span>take me home</span>
+                </li>
+                <li>
+                    <a href="#">Pricing</a>
+                    <span>take me home</span>
+                </li>
+                <li>
+                    <a href="#">Learn more</a>
+                    <span>take me home</span>
+                </li>
+            </ul>
+        </nav>
+
+        <header class="container">
+            <div class="logo">
+                <div id="siteLogo">color on site</div>
+                <img src="assets/menu.svg" class="menu-btn" id="open-menu"> 
+            </div>    
+        </header>
+
+        
+        <main class="container">
+            <section class="hero container">
+                <h1>We put color in a bland world.</h1>
+                <div class="yellow-bar"></div>
+                <p>Lorem ipsum dolor sit amet, eum quem soluta impetus eu.
+                    At probo choro philosophia vix.</p>
+                <div id="buttonContainer"><a href="#">Click me</a></div>
+             </section>
+             <div class="device">
+                 <figure>
+                     <img src="assets/hand-color.svg" alt="random image">
+                 </figure>
+             </div>    
+        </main>
+
+        <script>
+
+                var overlay = document.getElementById('overlay');
+                var closeMenu = document.getElementById('close-menu');
+        
+                document.getElementById('open-menu').addEventListener('click', function(){
+                    overlay.classList.add('show-menu');
+                })
+        
+                document.getElementById('close-menu').addEventListener('click', function(){
+                    overlay.classList.remove('show-menu');
+                })
+
+        </script>
+</body>
+</html>

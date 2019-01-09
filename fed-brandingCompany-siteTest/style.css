@@ -1,0 +1,313 @@
+/* mobile first */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #4bddac; 
+    color: white;
+    margin: 0;
+    
+
+}
+
+.container{
+    max-width: 1005px;
+    margin: 0 auto;
+    padding: 1em 1em;
+}
+
+header{
+    text-align: center;
+}
+
+#siteLogo{
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #faff9f;
+    text-align: left;
+    margin: 0;
+}
+
+main{
+    display: flex;
+    flex-flow: column-reverse;
+}
+
+.hero{
+    text-align: 2.5em;
+}
+
+.hero h1{
+    font-size: 2.5em;
+    font-weight: 700;
+    width: 80%;
+}
+
+.hero p{
+    font-size: 1.2em;
+    font-weight: 400;
+    max-width: 500px;
+    line-height: 1.8em;
+    margin: 2em auto;
+}
+
+.hero p::before{
+    content: "";
+    display: block;
+    width: 120px;
+    border: 2px solid #faff9f;
+    margin: 1em auto;
+}
+
+.hero a {
+    background: #ffd52e;
+    padding: 1em 3em;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.375em;
+    font-weight: 700;
+    
+}
+
+figure{
+    text-align: center;
+
+}
+
+figure img{
+    text-align: center;
+    width: 300px;
+}
+
+#buttonContainer{
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Navigation */
+
+a{
+    text-decoration: none;
+}
+
+.menu-btn{
+    width: 22px;
+    padding-top: 0px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+section{
+    padding: 4em;
+
+
+}
+
+nav{
+    position: absolute;
+    background: black;
+    padding: 1.5em 2em;
+    width: calc(100% - 4em);
+    height: 100%;
+    display: none;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.close-btn{
+    height: 18px;
+    width: 18px;
+    float: right;
+    cursor: pointer;
+    opacity: 0;
+    padding-right: 5px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 10% auto 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-rows: repeat(4, 25%);
+    width: 80%;
+}
+
+a{
+    color: white;
+    font-weight: bold;
+    font-size: 1.4em;
+
+}
+
+span{
+    color: grey;
+    display: block;
+    font-size: .75em;
+    margin: 10px 0 30px 0;
+    
+
+}
+
+li{
+    opacity: 0;
+}
+
+.show-menu{
+    display: block;
+    animation: slide-menu 1s ease-in forwards;
+}
+
+.close-btn{
+    animation: show-x 1s 1s forwards;
+}
+
+li:nth-of-type(1){
+    animation: menu-item-anim .6s forwards 1s ease-in-out;
+}
+
+li:nth-of-type(2){
+    animation: menu-item-anim .6s forwards 1.2s ease-in-out;
+}
+
+li:nth-of-type(3){
+    animation: menu-item-anim .6s forwards 1.4s ease-in-out;
+}
+
+li:nth-of-type(4){
+    animation: menu-item-anim .6s forwards 1.6s ease-in-out;
+}
+
+@keyframes slide-menu {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+
+}
+
+@keyframes show-x {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes menu-item-anim {
+    from {
+      transform: translateY(60%);
+      opacity: 0;  
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;  
+      }
+}
+
+/* ///////////////////////// */
+
+
+
+
+
+
+@media screen and (min-width: 820px) {
+    header{
+        display: flex;
+        justify-content: space-between;
+        flex-flow: wrap;
+        align-items: center;
+    }
+
+    main{
+        flex-flow: row;
+    }
+    .hero{
+        text-align: left;
+    }
+    .hero h1{
+        font-size: 4em;
+        width: 100%;
+    }
+    .hero p:before{
+        margin: 1em 0;
+    }
+    .hero p{
+        font-size: 1.3em;
+        padding: 0;
+        margin: 0 0  3em 0;
+    }
+
+    figure img{
+        padding-top: 100px;
+        width: 100%;
+    }
+
+    #buttonContainer{
+        flex-direction: column;
+        align-items: left;
+        align-content: left;
+        text-align: left;
+    }
+
+    #siteLogo{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        font-size: 1.5em;
+        font-weight: 600;
+        color: #faff9f;
+        text-align: left;
+        margin: 0;
+        padding-left: 15px;
+    }
+    .menu-btn{
+        flex-direction: column;
+        align-items: right; 
+        width: 22px;
+        float: right;
+        cursor: pointer;
+    }
+
+    ul{
+        grid-template-columns: repeat(4, 25%);
+    }
+
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .close-btn-container{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        max-width: 1005px;
+        margin: 0 auto;
+        padding: 0em 1em 1em 1em;
+
+    }
+
+    
+    .close-btn{
+        padding-right: 20px;
+    }
+}
+

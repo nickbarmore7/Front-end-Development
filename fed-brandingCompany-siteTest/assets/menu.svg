@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="16.4" viewBox="0 0 26 16.4">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="26" height="16.4" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="hamburger-menu" clip-path="url(#clip-path)">
+    <g id="hamburger-menu-2" data-name="hamburger-menu" transform="translate(-1773.5 -33.5)">
+      <line id="Line_1" data-name="Line 1" x2="24" transform="translate(1774.5 34.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <line id="Line_2" data-name="Line 2" x2="24" transform="translate(1774.5 41.7)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <line id="Line_3" data-name="Line 3" x2="24" transform="translate(1774.5 48.9)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
